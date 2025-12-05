@@ -1,0 +1,157 @@
+<!--
+Author: Selena Valdovinos 
+File Name: resources.html
+Date: 10/20/2025
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weightlifting World: Resources</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Emblema+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#2a1f14;">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Weightlifting World</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="benefits.html">Health Benefits</a></li>
+          <li class="nav-item"><a class="nav-link active" href="resources.html">Resources</a></li>
+          <li class="nav-item"><a class="nav-link" href="safety.html">Safety Tips</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header class="text-center my-4">
+    <h1 style="font-family:'Emblema One';">Helpful Resources</h1>
+    <h3 class="text-muted">Knowledge is power!</h3>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="container my-5">
+    <div class="row mb-4">
+      <div class="col-md-6">
+        <img src="images/resources.jpg" alt="Books and laptop on a table" class="img-fluid round shadow">
+      </div>
+      <div class="col-md-6">
+        <p>Here's a table of some of the best resources to help guide you on your weightlifting journey. From beginner guides to advanced programming, these tools can support your goals safely and effectively.</p>
+      </div>
+    </div>
+
+    <h3 class="fw-bold mt-4">Resources Table</h3>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Resource</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="https://www.nerdfitness.com" target="_blank" class="link">Nerd Fitness</a></td>
+          <td>Website</td>
+          <td>Great for beginners with easy-to-follow strength routines.</td>
+        </tr>
+        <tr>
+          <td><a href="https://stronglifts.com" target="_blank" class="link">StrongLifts 5x5</a></td>
+          <td>Website</td>
+          <td>Simple, effective training program for strength development.</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.youtube.com/@jeffnippard" target="_blank" class="link">Jeff Nippard</a></td>
+          <td>YouTube Channel</td>
+          <td>Science-based lifting and nutrition advice.</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.youtube.com/@MegSquats" target="_blank" class="link">MegSquats</a></td>
+          <td>YouTube Channel</td>
+          <td>Women's strength training and powerlifting guidance.</td>
+        </tr>
+        <tr>
+          <td>Fitbod</td>
+          <td>App</td>
+          <td>Personalized strength training plans based on equipment and recovery.</td>
+        </tr>
+        <tr>
+          <td>Strong</td>
+          <td>App</td>
+          <td>Easy-to-use workout tracking app for lifters.</td>
+        </tr>
+        <tr>
+          <td><em>Starting Strength</em> by Mark Rippetoe</td>
+          <td>Book</td>
+          <td>Classic strength training guide for beginners.</td>
+        </tr>
+        <tr>
+          <td><em>The New Rules of Lifting</em> by Lou Schuler & Alwyn Cosgrove</td>
+          <td>Book</td>
+          <td>Comprehensive lifting program with modern techniques.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Embedded Video -->
+    <h3 class="fw-bold mt-4">Video Resource</h3>
+    <div class="ratio ratio-16x9 mb-4">
+      <iframe id="player" type="text/html" width="560" height="315"
+              src="https://www.youtube.com/embed/qD5RPqpp6r0?origin=https://valdovinoss.github.io/weightlifting-world/"
+              title="Beginner Weightlifting Video" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+    </div>
+
+    <!-- Interactive Contact Form -->
+    <h3 class="fw-bold mt-4">Contact Us</h3>
+    <form id="contactForm" class="mb-5">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name:</label>
+        <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message:</label>
+        <textarea id="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-dark">Submit</button>
+    </form>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="text-center py-3" style="background-color:#2a1f14; color:#f6eee4;">
+    <p>&copy; 2025 Weightlifting World. All rights reserved.</p>
+    <p><a href="mailto:contact@weightliftingworld.net" style="color:#f6eee4;">contact@weightliftingworld.net</a></p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
